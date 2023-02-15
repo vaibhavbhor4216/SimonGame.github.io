@@ -31,10 +31,11 @@ function checkAnswer(currentLevel){
     else{
       playSounds("wrong");
       $("body").addClass("game-over");
+      $("#level-title").text("Game-over, Press any key to restart");
       setTimeout(function(){
             $("body").removeClass("game-over");
       },200);
-      $("#level-title").text("Game-over, Press any key to restart");
+      
       startOver();
     }
 }
